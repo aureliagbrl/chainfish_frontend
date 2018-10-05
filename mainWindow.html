@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="framework/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+    <script src="framework/p5.min.js"></script>
+</head>
+<body class="" id="all-of-it">
+    <div style="z-index: 0;" class="backdrop-animation">
+        <script src="script/frontscreen.js"></script>
+    </div>
+    <div class="container" style="animation: opac 1s;" id="front">
+        <div class="login-form" id="content">
+            <div class="form">
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="email" placeholder="Email" id="email-input">
+                        <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="password" placeholder="Password" id="password-input">
+                        <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field" id="password-check-input-container">
+                    <p class="control has-icons-left">
+                        <input class="input" type="password" placeholder="Retype Password" id="password-check-input">
+                        <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <div class="columns is-multiline is-mobile" id="buttons-container" >
+                        <div class="column is-half">
+                            <p class="control" id="login-button-container">
+                            <a class="button is-success is-fullwidth" id="login-button">
+                            Login
+                            </a>
+                            </p>
+                            <p class="control" id="back-button-container">
+                            <button class="button is-success" id="back-button">
+                            I Have an Account!
+                            </button>
+                            </p>
+                        </div>
+                        <div class="column is-half">
+                            <p class="control" id="register-button-container">
+                            <input type="button" class="button is-primary is-fullwidth" id="register-button" value="Register">
+                            </p>
+                            <p class="control" id="signup-button-container">
+                            <input type="button" class="button is-primary is-fullwidth" id="signup-button" value="Sign Me Up!">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script/login.js"></script>
+</html>

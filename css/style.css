@@ -1,0 +1,90 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: absolute;
+    z-index: 5;
+}
+
+.login-form {
+    padding: 15px;
+    background: #229993;
+    width: 350px;
+
+    border-radius: 10px;
+    border: 1px solid #1c7a76;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 10;
+
+    transition: width 2s, height 4s;
+}
+
+.more-danger{
+    border: 2px solid red;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2);
+}
+
+.more-success{
+    border: 3px solid greenyellow;
+    
+}
+
+.register-kuy {
+    height: 210px;
+    animation-duration: 0.3s;
+    animation-name: kocak;
+}
+
+.register-nanti {
+    height: 166px;
+    animation-duration: 0.3s;
+    animation-name: kocak-2;
+}
+
+@keyframes kocak {
+    0% {
+        height: 164px;
+    }
+}
+
+@keyframes kocak-2 {
+    0% {
+        height: 210px;
+    }
+}
+
+.fade-in {
+    animation: opac 0.4s;
+}
+
+.fade-out {
+    animation: opec 0.4s;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opec {
+    from{
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
